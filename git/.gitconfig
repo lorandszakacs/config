@@ -1,0 +1,19 @@
+[user]
+	name = Lorand Szakacs
+	email = lorand.szakacs@gmail.com
+[core]
+	editor = /Applications/Sublime.app/Contents/MacOS/Sublime\\ Text\\ 2
+[push]
+	default = matching
+
+[alias]
+  co = checkout
+
+[alias]
+  st = status
+
+[alias]
+  lc = log ORIG_HEAD.. --stat --no-merges
+
+[alias]
+  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
