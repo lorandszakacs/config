@@ -2,7 +2,8 @@
 	name = Lorand Szakacs
 	email = lorand.szakacs@gmail.com
 [core]
-	editor = /Applications/Sublime.app/Contents/MacOS/Sublime\\ Text\\ 2
+	editor = /Applications/Sublime\\ Text\\ 2.app/Contents/MacOS/Sublime\\ Text\\ 2
+
 [push]
 	default = matching
 
