@@ -31,6 +31,6 @@ The structure of subfolders is the following:
       * `java/`
       * `resources/`
 
-This has the structure of the default `sbt` projects. It can be changed globally or on a per project need basis.  
+This is the structure that `sbt` projects default to. It can be changed globally or on a per project basis.  
 
 All subprojects are defined to have the same source folder structure as `subproject-with-main`, but this won't be reflected until you add the structure yourself or run the `eclipse` task.
