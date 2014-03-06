@@ -1,7 +1,7 @@
 import sbt._
 import Keys._
 
-name := SubProjects.Names.SubprojectTwo
+name := SubProjects.Names.SubprojectOne
 
 organization := Common.organization
 
