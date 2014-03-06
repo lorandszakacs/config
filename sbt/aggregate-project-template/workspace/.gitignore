@@ -5,5 +5,8 @@
 .classpath
 .cache
 
+# Scala-IDE specific
+.scala_dependencies
+
 #eclipse building specific
 bin/
