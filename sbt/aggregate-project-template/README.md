@@ -34,3 +34,8 @@ The structure of subfolders is the following:
 This is the structure that `sbt` projects default to. It can be changed globally or on a per project basis.  
 
 All subprojects are defined to have the same source folder structure as `subproject-with-main`, but this won't be reflected until you add the structure yourself or run the `eclipse` task.
+
+### Using this template with `Java` projects.
+This template can be easily adapted to export pure Java projects by:
+* removing dependencies to the scala testing libraries
+* [optional] for eclipse use only: specifying the [projectFlavor](https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse#wiki-projectflavor) setting of the `sbt-eclipse` plugin.
