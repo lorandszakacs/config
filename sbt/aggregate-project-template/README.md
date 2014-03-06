@@ -1,6 +1,6 @@
 ## Sample `sbt` project hierarchy
 This is a template for a a "bare" sbt project that aggregates several subprojects.
-The main pattern is that of having your application specific code into a subproject, and then stand-alone dependencies in seperate subprojects.  
+The pattern of usage is that of having your application specific code in a subproject, and then fairly stand-alone dependencies in seperate subprojects.  
 
 The folder structure is:
 * `root`
