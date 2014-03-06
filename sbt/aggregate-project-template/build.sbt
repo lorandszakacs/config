@@ -27,7 +27,7 @@ javaOptions ++= Common.javaOptions
 
 javaOptions in Test ++= Testing.javaOptions
 
-//the main class of this project is actually the main class of the sgDownloader subproject
+//the main class of this project is actually the main class of the subProjWithMain subproject
 mainClass in Compile := (mainClass in subProjWithMain in Compile).value
 
 //we have to set the classpath to be the one of the project containing the main class
