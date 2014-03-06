@@ -1,0 +1,9 @@
+#eclipse specific:
+.metadata
+.settings/
+.project
+.classpath
+.cache
+
+#eclipse building specific
+bin/
