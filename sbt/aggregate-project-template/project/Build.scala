@@ -18,14 +18,6 @@ object Common {
   lazy val scalacOptions = Seq("-deprecation")
 
   lazy val javaOptions = Seq("-Xmx1G")
-
-  def sourceDirectories(subproject: String) = Seq(
-    file("workspace/" + subproject + "/src/main/scala").getAbsoluteFile,
-    file("workspace/" + subproject + "/src/main/resources").getAbsoluteFile, 
-    file("workspace/" + subproject + "/src/test/scala").getAbsoluteFile,
-    file("workspace/" + subproject + "/src/test/resources").getAbsoluteFile
-    )
-  
 }
 
 object Testing { 

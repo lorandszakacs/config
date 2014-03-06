@@ -15,9 +15,10 @@ javaOptions ++= Common.javaOptions
 
 javaOptions in Test ++= Testing.javaOptions
 
-sourceDirectories := Common.sourceDirectories(name.value)
-
 mainClass := None
+
+//required to create the default `sbt` folder structure
+EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
 
 //===================================================
 //         dependencies for testing libraries
