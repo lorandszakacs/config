@@ -1,6 +1,0 @@
-#sbt specific.
-target/
-dist/
-
-#mac specific
-.DS_Store
