@@ -30,7 +30,7 @@ echo "##########################################################################
 ############################### ENVIRONMENT VARIABLES #########################
 ###############################################################################
 
-export TEXT_EDITOR=\"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl\"
+export TEXT_EDITOR=\"/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl\"
 
 export JAVA_HOME=\"\"
 export SCALA_HOME=\"\"
@@ -74,6 +74,7 @@ GOOGLE_CHROME_URL="https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
 GOOGLE_DRIVE_URL="https://dl.google.com/drive/installgoogledrive.dmg"
 MU_COMMANDER_URL="http://www.mucommander.com/download/mucommander-0_9_0.dmg"
 UTORRENT_URL="http://download-new.utorrent.com/endpoint/utmac/os/osx/track/stable/"
+VLC_URL="http://videolan.szerverem.hu/vlc/2.1.4/macosx/vlc-2.1.4.dmg"
 
 GIT_URL="http://downloads.sourceforge.net/project/git-osx-installer/git-2.0.1-intel-universal-snow-leopard.dmg?r=&ts=1405847204&use_mirror=optimate"
 SCALA_URL="http://downloads.typesafe.com/scala/2.11.1/scala-2.11.1.tgz"
@@ -94,6 +95,7 @@ download "mucommander-0_9_0.dmg" $MU_COMMANDER_URL
 download "googlechrome.dmg" $GOOGLE_CHROME_URL
 download "installgoogledrive.dmg" $GOOGLE_DRIVE_URL
 download "utorrent.dmg" $UTORRENT_URL
+download "vlc-2.1.4.dmg" $VLC_URL
 
 download "git-2.0.1-intel-universal-snow-leopard.dmg" $GIT_URL
 download "scala-2.11.1.tgz" $SCALA_URL
@@ -105,7 +107,3 @@ download "elasticsearch-1.2.2.tar.gz" $ES_URL
 download "Aptana_Studio_3_Setup_3.4.2.dmg" $APTANA_URL
 download "scala-SDK-3.0.4-2.11-2.11-macosx.cocoa.x86_64.zip" $SCALA_IDE_URL
 download "ideaIC-13.1.3.dmg" $INTELLIJ_SCALA_URL
-
-
-
-
