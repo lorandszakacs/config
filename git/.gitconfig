@@ -1,23 +1,33 @@
 [user]
-	name = Lorand Szakacs
-	email = lsz@lorandszakacs.com
+    name = Lorand Szakacs
+    email = lorand.szakacs@busymachines.com
 [core]
-	editor = /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl
-
-[init]
-	templatedir = /usr/programming/git/share/git-core/templates
+    editor = subl -n -w
 
 [push]
-	default = matching
+    default = matching
+
+[merge]
+    tool = meld
+    
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    #cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 
 [alias]
-	co = checkout
+    co = checkout
 
 [alias]
-	st = status
+    cob = "!f() { \
+         git checkout -b $1 origin/$1; \
+       }; f"
 
 [alias]
-	lc = log ORIG_HEAD.. --stat --no-merges
+    st = status
 
 [alias]
-	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lc = log ORIG_HEAD.. --stat --no-merges
+
+[alias]
+    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
