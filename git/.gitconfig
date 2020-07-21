@@ -1,33 +1,23 @@
 [user]
-    name = Lorand Szakacs
-    email = lorand.szakacs@busymachines.com
-[core]
-    editor = subl -n -w
+name = Lorand Szakacs
+email = ...
 
 [push]
-    default = matching
-
-[merge]
-    tool = meld
-    
-[mergetool "meld"]
-    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-    #cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+default = matching
 
 [alias]
-    co = checkout
+co = checkout
 
 [alias]
-    cob = "!f() { \
+cob = "!f() { \
          git checkout -b $1 origin/$1; \
        }; f"
 
 [alias]
-    st = status
+st = status
 
 [alias]
-    lc = log ORIG_HEAD.. --stat --no-merges
+lc = log ORIG_HEAD.. --stat --no-merges
 
 [alias]
-    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-
+hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
