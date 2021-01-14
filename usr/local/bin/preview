@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#recursively previews all jpegs in the current folder
-APPLICATION=/Applications/Preview.app/Contents/MacOS/Preview
-FOLDER="$PWD"
-FILES="`find "$FOLDER" -depth -name '*.jpg' -type f | sed -e 's/^/"/g' -e 's/$/"/g'`" # | tr '\n' ' '`"
-open -a $APPLICATION "$FILES"

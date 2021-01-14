@@ -1,3 +1,0 @@
-#!/bin/bash
-
-find . -depth -name 'Raw' -type d -print -exec rm -rf {} \;
